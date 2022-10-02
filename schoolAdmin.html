@@ -5,6 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+<style>
+    .table-header{
+        color: #081d45;
+    }
+</style>
+
     <link rel="stylesheet" href="dashboard.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -23,18 +29,18 @@
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#" class="active">
+                <a href="#" class="">
                     <i class='bx bx-grid-alt'></i>
                     <span class="links_name">Dashboard</span>
                 </a>
             </li>
-            
 
 
 
 
 
-          
+
+
             <li class="log_out" style="margin-bottom: 3%;">
                 <a href="#">
                     <i class='bx bx-log-out'></i>
@@ -65,17 +71,17 @@
         </nav>
 
         <div class="home-content">
-          
 
-        
+
+
 
             <div class="sales-boxes">
                 <div class="recent-sales box">
-                    <div class="title">Member details</div>
+                    <div class="title table-header">Manage Users</div>
                     <div class="sales-details">
-                      
+
                         <ul class="details">
-                            <li class="topic">Member Name Name</li>
+                            <li class="topic">Name</li>
                             <li><a href="#">Alex Doe</a></li>
                             <li><a href="#">David Mart</a></li>
                             <li><a href="#">Roe Parter</a></li>
@@ -87,16 +93,16 @@
                             <li><a href="#">Tiana Loths</a></li>
                         </ul>
                         <ul class="details">
-                            <li class="topic">College Name</li>
+                            <li class="topic">College</li>
                             <li><a href="#">UT Arlington</a></li>
                             <li><a href="#">UTD</a></li>
                             <li><a href="#">UNT</a></li>
-                            <li><a href="#">University of South FLorida</a></li>
+                            <li><a href="#">T Arlington</a></li>
                             <li><a href="#">UT Arlington</a></li>
                             <li><a href="#">UTD</a></li>
                             <li><a href="#">UNT</a></li>
-                            <li><a href="#">University of South FLorida</a></li>
-                            <li><a href="#">University of South FLorida</a></li>
+                            <li><a href="#">T Arlington</a></li>
+                            <li><a href="#">T Arlington</a></li>
                         </ul>
                         <ul class="details">
                             <li class="topic">Role</li>
@@ -112,41 +118,59 @@
                         </ul>
                         <ul class="details">
                             <li class="topic">Action</li>
-                            <li><a href="#"><div class="button">
-                                <a href="#">View in Detail</a>
-                            </div></a></li>
-                            <li><a href="#"><div class="button">
-                                <a href="#">View in Detail</a>
-                            </div></a></li>
-                            <li><a href="#"><div class="button">
-                                <a href="#">View in Detail</a>
-                            </div></a></li>
-                            <li><a href="#"><div class="button">
-                                <a href="#">View in Detail</a>
-                            </div></a></li>
-                            <li><a href="#"><div class="button">
-                                <a href="#">View in Detail</a>
-                            </div></a></li>
-                            <li><a href="#"><div class="button">
-                                <a href="#">View in Detail</a>
-                            </div></a></li>
-                            <li><a href="#"><div class="button">
-                                <a href="#">View in Detail</a>
-                            </div></a></li>
-                            <li><a href="#"><div class="button">
-                                <a href="#">View in Detail</a>
-                            </div></a></li>
-                            <li><a href="#"><div class="button">
-                                <a href="#">View in Detail</a>
-                            </div></a></li>
-                     
+                            <li>
+                                <div class="button">
+                                    <a href="#">update</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button">
+                                    <a href="#">update</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button">
+                                    <a href="#">update</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button">
+                                    <a href="#">update</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button">
+                                    <a href="#">update</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button">
+                                    <a href="#">update</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button">
+                                    <a href="#">update</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button">
+                                    <a href="#">update</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="button">
+                                    <a href="#">update</a>
+                                </div>
+                            </li>
+
                     </div>
                     <div class="button">
                         <a href="#">See All</a>
                     </div>
                 </div>
                 <div class="top-sales box">
-                    <div class="title">Top Stories</div>
+                    <div class="title table-header">Top Stories</div>
                     <ul class="top-sales-details">
                         <li>
                             <a href="#">
@@ -154,7 +178,7 @@
                                 <span class="product">Topic</span>
                             </a>
                             <span class="price">Posted on 23-08-2005</span>
-                            
+
                         </li>
                         <li>
                             <a href="#">
@@ -162,25 +186,29 @@
                                 <span class="product">Topic</span>
                             </a>
                             <span class="price">Posted on 23-08-2005</span>
-                        </li>   <li>
+                        </li>
+                        <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Topic</span>
                             </a>
                             <span class="price">Posted on 23-08-2005</span>
-                        </li>   <li>
+                        </li>
+                        <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Topic</span>
                             </a>
                             <span class="price">Posted on 23-08-2005</span>
-                        </li>   <li>
+                        </li>
+                        <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Topic</span>
                             </a>
                             <span class="price">Posted on 23-08-2005</span>
-                        </li>   <li>
+                        </li>
+                        <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Topic</span>
@@ -194,87 +222,109 @@
                 </div>
                 <br>
                 <div class="top-sales box">
-                    <div class="title">Clubs</div>
+                    <div class="title table-header">Clubs</div>
                     <ul class="top-sales-details">
                         <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Club Name</span>
                             </a>
-                            <span class="price"> <div class="button">
-                                <a href="/container/schoolAdminClub.html">View in detail</a>
-                            </div></span>
-                            
+                            <span class="price">
+                                <div class="button">
+                                    <a href="/schoolAdminClub.html">View in detail</a>
+                                </div>
+                            </span>
+
                         </li>
                         <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Club Name</span>
                             </a>
-                            <span class="price"> <div class="button">
-                                <a href="/schoolAdminClub.html">View in detail</a>
-                            </div></span>
-                            
-                        </li>   <li>
+                            <span class="price">
+                                <div class="button">
+                                    <a href="/schoolAdminClub.html">View in detail</a>
+                                </div>
+                            </span>
+
+                        </li>
+                        <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Club Name</span>
                             </a>
-                            <span class="price"> <div class="button">
-                                <a href="/schoolAdminClub.html">View in detail</a>
-                            </div></span>
-                            
-                        </li>   <li>
+                            <span class="price">
+                                <div class="button">
+                                    <a href="/schoolAdminClub.html">View in detail</a>
+                                </div>
+                            </span>
+
+                        </li>
+                        <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Club Name</span>
                             </a>
-                            <span class="price"> <div class="button">
-                                <a href="/schoolAdminClub.html">View in detail</a>
-                            </div></span>
-                            
-                        </li>   <li>
+                            <span class="price">
+                                <div class="button">
+                                    <a href="/schoolAdminClub.html">View in detail</a>
+                                </div>
+                            </span>
+
+                        </li>
+                        <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Club Name</span>
                             </a>
-                            <span class="price"> <div class="button">
-                                <a href="/schoolAdminClub.html">View in detail</a>
-                            </div></span>
-                            
-                        </li>   <li>
+                            <span class="price">
+                                <div class="button">
+                                    <a href="/schoolAdminClub.html">View in detail</a>
+                                </div>
+                            </span>
+
+                        </li>
+                        <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Club Name</span>
                             </a>
-                            <span class="price"> <div class="button">
-                                <a href="/schoolAdminClub.html">View in detail</a>
-                            </div></span>
-                            
-                        </li>   <li>
+                            <span class="price">
+                                <div class="button">
+                                    <a href="/schoolAdminClub.html">View in detail</a>
+                                </div>
+                            </span>
+
+                        </li>
+                        <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Club Name</span>
                             </a>
-                            <span class="price"> <div class="button">
-                                <a href="/schoolAdminClub.html">View in detail</a>
-                            </div></span>
-                            
-                        </li>   <li>
+                            <span class="price">
+                                <div class="button">
+                                    <a href="/schoolAdminClub.html">View in detail</a>
+                                </div>
+                            </span>
+
+                        </li>
+                        <li>
                             <a href="#">
                                 <!--<img src="images/sunglasses.jpg" alt="">-->
                                 <span class="product">Club Name</span>
                             </a>
-                            <span class="price"> <div class="button">
-                                <a href="/schoolAdminClub.html">View in detail</a>
-                            </div></span>
-                           
+                            <span class="price">
+                                <div class="button">
+                                    <a href="/schoolAdminClub.html">View in detail</a>
+                                </div>
+                            </span>
+
                         </li>
                     </ul>
-                    
+
                 </div>
             </div>
-            
+
         </div>
 
         <!-- Chat -->
@@ -347,9 +397,10 @@
         sidebarBtn.onclick = function () {
             sidebar.classList.toggle("active");
             if (sidebar.classList.contains("active")) {
-                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-            } else
                 sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+
+            } else
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
         }
     </script>
 
