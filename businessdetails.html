@@ -5,8 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      .products-services-parent{
+        background-color: antiquewhite;
+      }
+      .products-services-header{
+        width: 100%;
+        padding: 15px 0px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        background-color: #231e39;
+        color: #ffffff;
+      }
+      .products-services-body{
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+      }
+      .products-services-item{
+        padding: 2%;
+        margin-bottom: 2px;
+        border-radius: 0px;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .products-services-item h2{
+       
+      }
+       .images{
+        width: 30%;
+        height: auto;
+      }
+      .item1, .item2{
+        background-color: #9682f7;
+      }
+      
+    </style>
 </head>
 
 <body>
@@ -25,69 +67,41 @@
           <div id="navbar-menu" aria-labelledby="navbar-toggle">
             <ul class="navbar-links">
               <li></li>
-              <li class="navbar-item"><a class="navbar-link" href="home.html">Home</a></li>
-              <li class="navbar-item"><a class="navbar-link" href="aboutus.html">About</a></li>
-              <li class="navbar-item"><a class="navbar-link" href="services.html">services</a></li>
-              <li class="navbar-item"><a class="navbar-link" href="contactus.html">Contact</a></li>
-              <li class="navbar-item"><a class="navbar-link" href="login.html">Login/SignUp</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/about">About</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/blog">Blog</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/careers">Careers</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/contact">Contact</a></li>
             </ul>
           </div>
         </nav>
     </header>
 </section>
-
-
 <br>
 
-    <section class="form">
-      <div class="form-container">
-        <div class="title">Contact Us</div>
-        <div class="content">
-          <form action="#">
-            <div class="user-details">
-              <div class="input-box">
-                <span class="details">First Name</span>
-                <input type="text" placeholder="Enter your first name" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Last Name</span>
-                <input type="text" placeholder="Enter your last name" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Email</span>
-                <input type="text" placeholder="Enter your email" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Phone Number</span>
-                <input type="text" placeholder="Enter your number" required>
-              </div>
-              <div class="gender-details">
-                <span class="details">Gender</span>
-                <div class="category">
-                    <select name="gender" id="gender" placeholder="Select Gender">
-                        <option value="default" selected>--Select Gender--</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="pnts">Prefer not to say</option>
-                    </select>
-                </div>
-              </div>
-              
-              <div class="input-box">
-                <span class="details">
-                    Query
-                </span>
-                <textarea placeholder="Type your query..."></textarea>
-              </div>
-            </div>
-           
-            <div class="button">
-              <input type="submit" value="Submit">
-            </div>
-          </form>
-        </div>
+<section class="aboutus">
+    <div class="about-section">
+        <h1>Business Details</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
       </div>
-    </section>
+    <div class="products-services-parent">
+        <div class="products-services-header">
+          <h2>Products & Services</h2>
+        </div>
+        <div class="products-services-body">
+          <div class="products-services-item item1">
+            <h1>Books & Stationary</h1>
+            <div class="item-image">
+              <img class="images" src="stationary-transformed.jpeg" alt="">
+            </div>
+            <div class="item-body">Looking for Office stationery or School stationery online? Browse a wide range of stationery items at the online stationery store</div>
+          </div>
+          <div class="products-services-item item2"> item 2</div>
+          <div class="products-services-item item3">item 3</div>
+        </div>
+    </div>
+
+</section>
     <br>
     <section>
         <footer>
@@ -177,6 +191,7 @@
 
     </section>
     <script src="script.js"></script>
+   
 </body>
 
 </html>

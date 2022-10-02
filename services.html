@@ -5,8 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      .item2, .item4{
+        background-color: #646e83 !important;
+        margin: 5px 0px;
+      }
+      td{
+        padding: 2%;
+        text-align: left;
+      }
+    </style>
 </head>
 
 <body>
@@ -35,59 +46,53 @@
         </nav>
     </header>
 </section>
-
-
 <br>
 
-    <section class="form">
-      <div class="form-container">
-        <div class="title">Contact Us</div>
-        <div class="content">
-          <form action="#">
-            <div class="user-details">
-              <div class="input-box">
-                <span class="details">First Name</span>
-                <input type="text" placeholder="Enter your first name" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Last Name</span>
-                <input type="text" placeholder="Enter your last name" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Email</span>
-                <input type="text" placeholder="Enter your email" required>
-              </div>
-              <div class="input-box">
-                <span class="details">Phone Number</span>
-                <input type="text" placeholder="Enter your number" required>
-              </div>
-              <div class="gender-details">
-                <span class="details">Gender</span>
-                <div class="category">
-                    <select name="gender" id="gender" placeholder="Select Gender">
-                        <option value="default" selected>--Select Gender--</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="pnts">Prefer not to say</option>
-                    </select>
-                </div>
-              </div>
-              
-              <div class="input-box">
-                <span class="details">
-                    Query
-                </span>
-                <textarea placeholder="Type your query..."></textarea>
-              </div>
-            </div>
-           
-            <div class="button">
-              <input type="submit" value="Submit">
-            </div>
-          </form>
-        </div>
+<section class="aboutus">
+    <div class="about-section item1">
+        <h1>Our Services</h1>
+        <p>Some text about who we are and what we do.</p>
+        <p>Resize the browser window to see that this page is responsive by the way.</p>
       </div>
-    </section>
+      <div class="about-section item2">
+        <table>
+          <tr>
+              <td>
+                  <div>
+                      <img src="https://tse3.mm.bing.net/th?id=OIP.5VWKztC1SDFJVsbR-9o5kAHaD4&pid=Api&P=0" alt="">
+                  </div>
+                  <div>
+                      <h4 class="service-name"><strong>Lorem ipsum dolor sit amet</strong> </h4>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                      </p>
+                  </div>
+              </td>
+              <td>
+                  <div>
+                      <img src="https://tse3.mm.bing.net/th?id=OIP.5VWKztC1SDFJVsbR-9o5kAHaD4&pid=Api&P=0" alt="">
+                  </div>
+                  <div>
+                      <h4 class="service-name"><strong>Lorem ipsum dolor sit amet</strong> </h4>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                      </p>
+                  </div>
+              </td>
+          </tr>
+      </table>
+      </div>
+</section>
     <br>
     <section>
         <footer>
@@ -177,6 +182,7 @@
 
     </section>
     <script src="script.js"></script>
+   
 </body>
 
 </html>

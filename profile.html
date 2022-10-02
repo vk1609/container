@@ -27,10 +27,9 @@
                 <div id="navbar-menu" aria-labelledby="navbar-toggle">
                     <ul class="navbar-links">
                         <li></li>
-                        <li class="navbar-item"><a class="navbar-link" href="/about">About</a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="/blog">Blog</a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="/careers">Careers</a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="/contact">Contact</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="home.html">Home</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="services.html">services</a></li>
+                        <li class="navbar-item"><a class="navbar-link" href="contactus.html">Contact</a></li>
                         <li class="navbar-item"><a class="navbar-link" href="allproducts.html">Shop <i id="chat-icon" style="color:white;" class="fa fa-fw fa-shopping-bag"></i></a></li>
                         <li class="navbar-item"><a class="navbar-link" href="login.html">Logout</a></li>
                     </ul>
@@ -56,6 +55,15 @@
                             <button class="primary">
                                 Edit Profile
                             </button>
+                            <button class="primary ghost" onclick="manageClubs()">
+                                Manage Clubs
+                            </button>
+                            <script>
+                                function manageClubs(){
+                                    window.location.href="manageclubs.html"
+                                    event.preventDefault()
+                                }
+                            </script>
                             
                         </div>
                         <div class="skills">
@@ -82,7 +90,7 @@
 <br>
             <div class="child_profile_right">
                 <div class="card-container" style="padding:15px 0 ;">
-                    <h5 class="header-bar"> <button class="primary">Add</button><strong>Posts</strong>
+                    <h5 class="header-bar"> <button class="primary"><a href="addPost.html">Add</a></button><strong>Posts</strong>
                         <button class="primary ghost1">Delete</button>
                     </h5>
                 </div>    
@@ -114,7 +122,7 @@
  
                 <div class="card-container" style="padding:15px 0 ;">
                     <h5 class="header-bar"> <button class="primary">Join</button><strong>Clubs</strong>
-                        <button class="primary ghost1">Delete</button>
+                        <button class="primary ghost1">Leave</button>
                     </h5>
                 </div>
  
@@ -144,7 +152,7 @@
  
  
                 <div class="card-container" style="padding:15px 0 ;">
-                    <h5 class="header-bar"> <button class="primary">Add</button><strong>Products</strong>
+                    <h5 class="header-bar"> <button class="primary"><a href="addProduct.html">Add</a></button><strong>Products</strong>
                         <button class="primary ghost1">Delete</button>
                     </h5>
                 </div>
@@ -182,7 +190,7 @@
  
                 <div class="advertisement">
                     <div class="card-container" style="padding:15px 0 ;">
-                        <h5 class="header-bar"> <button class="primary">Add</button><strong>Advertisement</strong>
+                        <h5 class="header-bar"> <button class="primary"><a href="addAdvertisement.html">Add</a></button><strong>Advertisement</strong>
                             <button class="primary ghost1">Delete</button>
                         </h5>
                     </div>
