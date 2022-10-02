@@ -83,7 +83,18 @@
                     </div>
 
                     <div class="button">
-                        <input type="submit" value="Add">
+                        <button type="submit" onclick="add()">Add</button>
+                        <script>
+                            function add(){
+                                alert("Item added successfully")
+                                history.back()
+                            }
+                        </script>
+                    </div>
+                    <div class="button">
+                        <!-- <button onclick="history.go(-1)">Go Back 2 Pages</button> -->
+                        <button onclick="history.back()">Go Back</button>
+                        
                     </div>
                 </form>
             </div>

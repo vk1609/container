@@ -913,9 +913,11 @@ body {
       width: 100%;
     }
     .child_profile_right{
+      background-color: white;
       width:65% !important;
       margin-left: 5px;
       float: right;
+      border: 2px solid #b2afaf;
     }
     .card-container{
       width: 100%;
@@ -924,6 +926,7 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      font-size: 1rem;
     }
   }
   

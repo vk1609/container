@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section style="height:64px ;">
@@ -48,9 +50,7 @@
                             <button class="primary">
                                 Edit Profile
                             </button>
-                            <button class="primary">
-                                Dashboard
-                            </button>
+                           
                          
                         </div>
                         <div class="skills">
@@ -77,7 +77,7 @@
 <br>
             <div class="child_profile_right">
                 <div class="card-container" style="padding:15px 0 ;">
-                    <h5 class="header-bar"> <button class="primary">Add</button><strong>Posts</strong>
+                    <h5 class="header-bar"> <button class="primary">Add</button><strong>Advertisements</strong>
                         <button class="primary ghost1">Delete</button>
                     </h5>
                 </div>    
@@ -115,47 +115,14 @@
  
  
  
-                <div class="card-container" style="padding:15px 0 ;">
-                    <h5 class="header-bar"> <button class="primary">Join</button><strong>Clubs</strong>
-                        <button class="primary ghost1">Delete</button>
-                    </h5>
-                </div>
- 
-                <div class="wrapper-grid">
-                   
-                        <div class="container">
-                            <div  class="select-checkbox-div">
-                               <input type="checkbox" name="select-checkbox" id="" class="select-checkbox">
-                            </div>
-                            <div class="card">
-                                <img src="pd_club.png" class="item-images" alt="">
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div  class="select-checkbox-div">
- 
-                                <input type="checkbox" name="select-checkbox" id="" class="select-checkbox">
-                            </div>
-                            <div class="card">
-                                <img src="hh_club.png" class="item-images" alt="">
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div  class="select-checkbox-div">
- 
-                                <input type="checkbox" name="select-checkbox" id="" class="select-checkbox">
-                            </div>
-                            <div class="card">
-                                <img src="workshop_club.png" class="item-images" alt="">
-                            </div>
-                        </div>
-                </div>
+                
+                
  
  
  
  
                 <div class="card-container" style="padding:15px 0 ;">
-                    <h5 class="header-bar"> <button class="primary">Add</button><strong>Products</strong>
+                    <h5 class="header-bar"> <button class="primary"><a href="addProduct.html">Add</a> </button><strong>Products</strong>
                         <button class="primary ghost1">Delete</button>
                     </h5>
                 </div>
@@ -201,16 +168,67 @@
  
                 </div>
  
-                <div class="advertisement">
-                    <div class="card-container" style="padding:15px 0 ;">
-                        <h5 class="header-bar"> <button class="primary">Add</button><strong>Advertisement</strong>
-                            <button class="primary ghost1">Delete</button>
-                        </h5>
-                    </div>
-                </div>
+                
             </div>
         </div>
-        <br>
+    
+          <!-- Chat -->
+        <!-- CHAT BAR BLOCK -->
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible">Hyper Chat
+                <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+            </button>
+
+            <div class="content">
+                <section class="chat-right-pane floater">
+                    <div class="contacts">
+                        <div>
+                            <li class="person"> <img src="profile.png" alt="" class="profile-pic"> person</li>
+                            <li class="person"> <img src="user.png" alt="" class="profile-pic">person</li>
+                            <li class="person"> <img src="profile.png" alt="" class="profile-pic">person</li>
+                            <li class="person"><img src="user.png" alt="" class="profile-pic">person</li>
+                            <li class="person"> <img src="profile.png" alt="" class="profile-pic">person</li>
+                        </div>
+                    </div>
+                </section>
+                <div class="full-chat-block floater">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            </div>
+
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                        placeholder="Tap 'Enter' to send a message">
+                                    <p></p>
+                                </div>
+
+                                <div class="chat-bar-icons">
+                                    <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                        onclick="heartButton()"></i>
+                                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                        onclick="sendButton()"></i>
+                                </div>
+                            </div>
+
+                            <div id="chat-bar-bottom">
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     </section>
     <section>
         <footer>
@@ -300,6 +318,9 @@
  
     </section>
     <script src="script.js"></script>
+    <script src="chat.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="responses.js"></script>
 </body>
  
 </html>
