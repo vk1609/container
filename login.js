@@ -1,3 +1,5 @@
+
+
 // login Code
 
 var attempt=3;
@@ -5,10 +7,33 @@ var attempt=3;
 function validate(){
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  if ( username == "admin" && password == "admin"){
+  if ( username == "student" ){
   // alert ("Login successfully");
-  window.location.href = "./schoolAdminProfile.html"; // Redirecting to other page.
+   if(password == "password")
+   window.location.href = "profile.html"; 
+   event.preventDefault();// Redirecting to other page.
   return false;
+  }
+  else if(username == "sadmin"){
+    if(password == "password")
+    window.location.href = "schoolAdminProfile.html"; 
+    event.preventDefault();// Redirecting to other page.
+  return false;
+
+  }
+  else if(username == "suadmin"){
+    if(password == "password")
+    window.location.href = "superAdminPorfile.html"; 
+    event.preventDefault();// Redirecting to other page.
+  return false;
+
+  }
+  else if(username == "bowner"){
+    if(password == "password")
+    window.location.href = "businessOwnerProfile.html"; 
+    event.preventDefault();// Redirecting to other page.
+  return false;
+
   }
   else{
   attempt --;// Decrementing by one.
@@ -22,3 +47,5 @@ function validate(){
   }
   }
   }
+
+ 
