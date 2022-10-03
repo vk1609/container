@@ -47,15 +47,15 @@
             <div class="user-details">
               <div class="input-box">
                 <span class="details">First Name</span>
-                <input type="text" placeholder="Enter your first name" required>
+                <input type="text" placeholder="Enter your first name" id="first-name" required>
               </div>
               <div class="input-box">
                 <span class="details">Last Name</span>
-                <input type="text" placeholder="Enter your last name" required>
+                <input type="text" placeholder="Enter your last name" id="last-name" required>
               </div>
               <div class="input-box">
                 <span class="details">Email</span>
-                <input type="text" placeholder="Enter your email" required>
+                <input type="text" placeholder="Enter your email" id="email" required>
               </div>
               <div class="input-box">
                 <span class="details">Phone Number</span>
@@ -77,12 +77,12 @@
                 <span class="details">
                     Query
                 </span>
-                <textarea placeholder="Type your query..."></textarea>
+                <textarea placeholder="Type your query..." id="message"></textarea>
               </div>
             </div>
            
             <div class="button">
-              <input type="submit" value="Submit">
+              <input type="Button" value="Submit" onclick="sendMail()">
             </div>
           </form>
         </div>
@@ -177,6 +177,16 @@
 
     </section>
     <script src="script.js"></script>
+    <script src="contact-email.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("2yHKmYpP5HHQZlerA");
+   })();
+</script>
 </body>
 
 </html>
