@@ -5,7 +5,7 @@ function sendMail() {
      message : document.getElementById("message").value
   };
 
-  emailjs.send('service_a4wyg6o', 'template_o44w8sa', templateParams)
+  emailjs.send('service_pe0856i', 'template_kpp0jo4', templateParams)
     .then(function (response) {
       console.log('SUCCESS!', response.status, response.text);
       alert("Thank you for reaching out, We'll get back to you as soon as possible!")

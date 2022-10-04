@@ -5,7 +5,7 @@ function sendMail() {
     password: document.getElementById("password").value
   };
 
-  emailjs.send('service_a4wyg6o', 'template_gnm504z', templateParams)
+  emailjs.send('service_pe0856i', 'template_pe2h70e', templateParams)
     .then(function (response) {
       console.log('SUCCESS!', response.status, response.text);
       alert("Signup successful!, Credentials sent to your registered email address.")
